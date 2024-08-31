@@ -14,5 +14,8 @@ COPY . ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Run the voila web service on container startup. 
-# CMD exec voila --port=$PORT --Voila.ip=0.0.0.0 --no-browser /app/notebooks/ee-viola-app.ipynb
-CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 main:app
+CMD exec voila --port=$PORT --Voila.ip=0.0.0.0 --no-browser /app/notebooks/ee-viola-app.ipynb
+
+# Run gunicorn service on container startup. 
+# CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 main:app
+
