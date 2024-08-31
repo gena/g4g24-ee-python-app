@@ -9,6 +9,7 @@ export IMAGE_PATH=${REGION}-docker.pkg.dev/${PROJECT}/${REPOSITORY}/${IMAGE}
 gcloud config set project $PROJECT
 gcloud services enable artifactregistry.googleapis.com
 gcloud services enable cloudbuild.googleapis.com
+gcloud services enable run.googleapis.com
 
 gcloud artifacts repositories create $REPOSITORY --project $PROJECT --repository-format=docker --location=$REGION --description="Docker repository for G4G demos"
 
