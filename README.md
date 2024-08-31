@@ -14,5 +14,13 @@ pip install virtualenv
 virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt 
+```
+
+3. Start Viola
+
+This will start a new server in the Cloud Shell which can be used for testing during development
+
+```bash
 voila --Voila.tornado_settings="{'allow_origin': '*'}" ./notebooks/ee-viola-app.ipynb
 ```
+
