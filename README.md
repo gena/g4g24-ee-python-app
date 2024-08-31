@@ -5,9 +5,9 @@
 
 ## Develop EE Python dashboard app
 
-Open notebooks/ee-viola-app.ipynb and update PROJECT variable.
+Check `notebooks/ee-viola-app.ipynb` and update PROJECT variable.
 
-## Start voila locally for during development
+## Run Voila locally during development
 
 The following command will start a new voila server in the Cloud Shell which can be used for testing during development:
 
