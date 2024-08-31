@@ -16,6 +16,8 @@ source venv/bin/activate
 pip install -r requirements.txt 
 ```
 
+3. Open notebooks/ee-viola-app.ipynb and modify PROJECT
+
 3. Start Viola
 
 This will start a new server in the Cloud Shell which can be used for testing during development
