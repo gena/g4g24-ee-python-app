@@ -9,7 +9,7 @@
 2. Create python virtual env and install dependencies
 
 ```bash
-cd g4g24-ee-python-app
+cd ./cloudshell_open/g4g24-ee-python-app
 pip install virtualenv
 virtualenv venv
 source venv/bin/activate
