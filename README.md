@@ -26,3 +26,20 @@ This will start a new server in the Cloud Shell which can be used for testing du
 voila --Voila.tornado_settings="{'allow_origin': '*'}" ./notebooks/ee-viola-app.ipynb
 ```
 
+4. Deploy App to Cloud Run
+
+Check the Dockerfile file to see how we configure the app.
+
+Modify deploy.sh and run in the terminal:
+
+./deploy.sh
+
+
+Is this step goes wrong - test docker image locally by calling:
+
+```bash
+docker pull us-central1-docker.pkg.dev/dgena-demo2/g4g24-repository/ee-python-app:latest
+docker images # check image name
+docker run -it <IMAGE_NAME> /bin/bash
+docker image rm <IMAGE_NAME>
+```
