@@ -11,14 +11,6 @@ Make sure to replace the `YOUR_PROJECT_NAME` with your Cloud Project name where 
 
 ## Run Voila locally during development
 
-The following command will start a new voila server in the Cloud Shell which can be used for testing during development:
-
-```bash
-voila --Voila.tornado_settings="{'allow_origin': '*'}" ./notebooks/ee-viola-app.ipynb
-```
-
-Notice that we disable CORS to make sure that the app URL redirected by Cloud Shell can be accessed.
-
 For local development, it is best to run voila in a separate virtual environment. Create a Python virtual environment and install dependencies in the following way:
 
 ```bash
@@ -29,8 +21,13 @@ source venv/bin/activate
 pip3 install -r requirements.txt 
 ```
 
+The following command will start a new voila server in the Cloud Shell which can be used for testing during development:
 
-If the image build fails, test the Docker image locally by calling:
+```bash
+voila --Voila.tornado_settings="{'allow_origin': '*'}" ./notebooks/ee-viola-app.ipynb
+```
+
+Notice that we disable CORS to make sure that the app URL redirected by Cloud Shell can be accessed.
 
 ## Deploy to Cloud run
 
@@ -46,3 +43,4 @@ docker images # check image name
 docker run -it <IMAGE_NAME> /bin/bash
 docker image rm <IMAGE_NAME>
 ```
+
