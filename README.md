@@ -52,3 +52,4 @@ docker run -it <IMAGE_NAME> /bin/bash
 docker image rm <IMAGE_NAME>
 ```
 
+If you get error during deployment - check the Cloud Run Log messages via Cloud Console. Potentially, some roles/permissions will need to be added via Google Cloud IAM to fix it if this happens. 
