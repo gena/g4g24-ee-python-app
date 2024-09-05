@@ -5,7 +5,9 @@
 
 ## Develop EE Python dashboard app
 
-Open `notebooks/notebooks/ee-viola-app.ipynb` to see an example on how to develop EE-enabled dashboard using Python and ipywidgets.
+Open `notebooks/notebooks/ee-viola-app.ipynb` for an example showing to develop EE-enabled dashboard using Python and ipywidgets.
+
+Make sure to replace the `YOUR_PROJECT_NAME` with your Cloud Project name where Earth Engine is registered. If this not the case - follow the https://code.earthengine.google.com/register and register your project first. 
 
 ## Run Voila locally during development
 
@@ -32,7 +34,7 @@ If the image build fails, test the Docker image locally by calling:
 
 ## Deploy to Cloud run
 
-Edit `deploy.sh` and update the `YOUR_PROJECT_NAME` variable, then run `./deploy.sh` to deploy your app to Cloud Run.
+Edit `deploy.sh` and replace the `YOUR_PROJECT_NAME` in the second line of the script, then run `./deploy.sh` to deploy your app to Cloud Run.
 
 ## Troubleshouting 
 
