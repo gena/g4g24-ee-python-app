@@ -35,7 +35,7 @@ After you run the above command in the Cloud Shell Terminal, it will print the U
 
 If everything works fine, you should page like this:
 
-<img width="947" alt="image" src="https://github.com/user-attachments/assets/7e5b3bf8-8f47-4198-8fa2-137c8e752e78">
+<img width="1003" alt="image" src="https://github.com/user-attachments/assets/994be2b3-c3ee-4839-839b-39a2b7a6f2a0">
 
 ## Deploy to Cloud run
 
