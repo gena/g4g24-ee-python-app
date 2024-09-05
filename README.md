@@ -27,7 +27,7 @@ The following command will start a new voila server in the Cloud Shell which can
 voila --Voila.tornado_settings="{'allow_origin': '*'}" ./notebooks/ee-voila-app.ipynb
 ```
 
-After you run the above command in the Cloud Shell Terminal, it will print the URL to the server started on the Cloud Shell machine, and will automatically redirect traffict to the viola server, follow that link:
+After you run the above command in the Cloud Shell Terminal, it will print the URL of the server started on the Cloud Shell machine `http://localhost:8866/` and will automatically redirect all traffict to the viola server, follow that link:
 
 <img width="755" alt="image" src="https://github.com/user-attachments/assets/3b194ea4-f903-4ccc-ba05-38cc67701bf3">
 
