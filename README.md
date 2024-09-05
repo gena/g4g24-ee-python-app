@@ -23,10 +23,10 @@ For local development, it is best to run voila in a separate virtual environment
 
 ```bash
 cd ./cloudshell_open/g4g24-ee-python-app
-pip install virtualenv
+pip3 install virtualenv
 virtualenv venv
 source venv/bin/activate
-pip install -r requirements.txt 
+pip3 install -r requirements.txt 
 ```
 
 
