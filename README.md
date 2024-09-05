@@ -5,7 +5,7 @@
 
 ## Develop EE Python dashboard app
 
-Open `notebooks/notebooks/ee-viola-app.ipynb` for an example showing to develop EE-enabled dashboard using Python and ipywidgets.
+Open `notebooks/notebooks/ee-voila-app.ipynb` for an example showing to develop EE-enabled dashboard using Python and ipywidgets.
 
 Make sure to replace the `YOUR_PROJECT_NAME` with your Cloud Project name where Earth Engine is registered. If this not the case - follow the https://code.earthengine.google.com/register and register your project first. 
 
@@ -24,7 +24,7 @@ pip3 install -r requirements.txt
 The following command will start a new voila server in the Cloud Shell which can be used for testing during development:
 
 ```bash
-voila --Voila.tornado_settings="{'allow_origin': '*'}" ./notebooks/ee-viola-app.ipynb
+voila --Voila.tornado_settings="{'allow_origin': '*'}" ./notebooks/ee-voila-app.ipynb
 ```
 
 Notice that we disable CORS to make sure that the app URL redirected by Cloud Shell can be accessed.
