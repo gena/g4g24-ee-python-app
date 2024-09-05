@@ -27,6 +27,8 @@ The following command will start a new voila server in the Cloud Shell which can
 voila --Voila.tornado_settings="{'allow_origin': '*'}" ./notebooks/ee-voila-app.ipynb
 ```
 
+Notice that we disable CORS to make sure that the app URL redirected by the Cloud Shell can be accessed.
+
 After you run the above command in the Cloud Shell Terminal, it will print the URL of the server started on the Cloud Shell machine `http://localhost:8866/` and will automatically redirect all traffict to the viola server, follow that link:
 
 <img width="755" alt="image" src="https://github.com/user-attachments/assets/3b194ea4-f903-4ccc-ba05-38cc67701bf3">
@@ -34,8 +36,6 @@ After you run the above command in the Cloud Shell Terminal, it will print the U
 If everything works fine, you should page like this:
 
 <img width="947" alt="image" src="https://github.com/user-attachments/assets/7e5b3bf8-8f47-4198-8fa2-137c8e752e78">
-
-Notice that we disable CORS to make sure that the app URL redirected by Cloud Shell can be accessed.
 
 ## Deploy to Cloud run
 
