@@ -1,7 +1,7 @@
 #!/bin/bash
-export PROJECT="<YOUR_PROJECT_NAME>"
+export PROJECT="<YOUR_PROJECT_NAME>" # <<< change this to your Cloud Project name
 
-if PROJECT="<YOUR_PROJECT_NAME>"; then
+if [ $PROJECT = "<YOUR_PROJECT_NAME>" ]; then
     echo "Error: please change <YOUR_PROJECT_NAME> to your project name in deploy.sh"
     exit 1
 fi
